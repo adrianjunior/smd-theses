@@ -1,0 +1,68 @@
+[
+    {
+      "title": {
+        "pt-br": "DESENVOLVIMENTO DE JOGOS EDUCATIVOS CONTROLADOS VIA INTERFACE CÉREBRO-COMPUTADOR: UMA REVISÃO SISTEMÁTICA DA LITERATURA",
+        "en-us": "DEVELOPMENT OF EDUCATIONAL GAMES CONTROLLED BY BRAIN-COMPUTER INTERFACE: A SYSTEMATIC LITERATURE REVIEW"
+      },
+      "author": "Thais Ribeiro Barroso Torres",
+      "supervisor": "Edgar Marçal de Barros Filho",
+      "path": "education",
+      "type": "monograph",
+      "semester": "2023.2",
+      "summary": {
+        "pt-br": "Simplificar o desenvolvimento de jogos educativos controlados por ondas cerebrais, reunindo dados relevantes para desenvolvedores e pesquisadores da área.",
+        "en-us": "To simplify the development of educational games controlled by brain waves, gathering relevant data for developers and researchers in the area."
+      },
+      "keywords": {
+        "pt-br": ["Interfaces Cérebro-computador", "Dispositivos de Eletroencefalograma", "Jogos Educativos"],
+        "en-us": ["Brain-Computer Interfaces", "Electroencephalography Devices", "Educational Games"]
+      }
+    },
+    {
+      "title": {
+        "pt-br": "LEAN UX NO REDESIGN DA INTERFACE DO JOGO HEXACHRONOS",
+        "en-us": "LEAN UX IN THE REDESIGN OF THE HEXACHRONOS GAME INTERFACE"
+      },
+      "author": "Paulo Vasconcelos Serpa",
+      "supervisor": "Ticianne de Gois Ribeiro Darin",
+      "path": "design",
+      "type": "report",
+      "semester": "2022.1",
+      "summary": {
+        "pt-br": "Redesenhar a interface do jogo Hexachronos de forma iterativa, adaptando-a ao público e às propostas do jogo, utilizando as metodologias Design Thinking e Lean UX.",
+        "en-us": "To redesign the interface of the Hexachronos game in an iterative way, adapting it to the audience and the game's proposals, using the Design Thinking and Lean UX methodologies."
+      },
+      "keywords": {
+        "pt-br": ["design de interface para jogos", "Lean UX", "jogos mobile"],
+        "en-us": ["game interface design", "Lean UX", "mobile games"]
+      }
+    },
+    {
+      "title": {
+        "pt-br": "LUMI: REPOSITÓRIO INSTITUCIONAL PARA A PRODUÇÃO AUDIOVISUAL DO CURSO DE SISTEMAS E MÍDIAS DIGITAIS",
+        "en-us": " LUMI: INSTITUTIONAL REPOSITORY FOR THE AUDIOVISUAL PRODUCTION OF THE SYSTEMS AND DIGITAL MEDIA COURSE"
+      },
+      "author": "Mateus Pereira dos Santos",
+      "supervisor": "Rafael Augusto Ferreira do Carmo",
+      "path": "systems",
+      "type": "report",
+      "semester": "2021.1",
+      "summary": {
+        "pt-br": "Lumi é um repositório digital para centralizar e dar visibilidade aos trabalhos audiovisuais do curso de Sistemas e Mídias Digitais da UFC, servindo como portfólio profissional para os alunos.",
+        "en-us": "Lumi is a digital repository to centralize and give visibility to the audiovisual works of the Systems and Digital Media course at UFC, serving as a professional portfolio for students."
+      },
+      "keywords": {
+        "pt-br": ["Repositório institucional digital", "Portfólio audiovisual", "Front-end", "Sistema Web"],
+        "en-us": ["Digital institutional repository", "Audiovisual portfolio", "Front-end", "Web System"]
+      }
+    },
+    {
+      "title": {
+        "pt-br": "JOGOS SÉRIOS E TEMÁTICAS SOCIAIS: DESENVOLVIMENTO E AVALIAÇÃO PRELIMINAR DE UM JOGO QUE ABORDA O TEMA MACHISMO E SUAS REFLEXÕES PROVOCADAS",
+        "en-us": "SERIOUS GAMES AND SOCIAL THEMES: DEVELOPMENT AND PRELIMINARY EVALUATION OF A GAME THAT ADDRESSES THE THEME OF MACHISMO AND ITS PROVOCATIVE REFLECTIONS"
+      },
+      "author": "Bruno Castro Oliveira",
+      "supervisor": "Alysson Diniz"
+    }    
+]
+  

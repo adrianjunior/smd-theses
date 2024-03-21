@@ -1,0 +1,59 @@
+.label-small {
+    @apply text-label-small font-medium
+}
+
+.label-medium {
+    @apply text-label-medium font-medium
+}
+
+.label-large {
+    @apply text-label-large font-medium
+}
+
+.body-small {
+    @apply text-body-small font-normal
+}
+
+.body-medium {
+    @apply text-body-medium font-normal
+}
+
+.body-large {
+    @apply text-body-large font-normal
+}
+
+.title-small {
+    @apply text-title-small font-medium
+}
+
+.title-medium {
+    @apply text-title-medium font-medium
+}
+
+.title-large {
+    @apply text-title-large font-bold
+}
+
+.headline-small {
+    @apply text-headline-small font-bold
+}
+
+.headline-medium {
+    @apply text-headline-medium font-semibold
+}
+
+.headline-large {
+    @apply text-headline-large font-semibold
+}
+
+.display-small {
+    @apply text-display-small font-normal
+}
+
+.display-medium {
+    @apply text-display-medium font-semibold
+}
+
+.display-large {
+    @apply text-display-large font-extrabold
+}
