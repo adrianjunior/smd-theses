@@ -3,19 +3,19 @@
 }
 
 .primary-interactive-element {
-    @apply bg-primary text-on-primary dark:bg-dark-primary dark:text-dark-on-primary hover:bg-opacity-90 focus:bg-opacity-90
+    @apply bg-primary text-on-primary dark:bg-dark-primary dark:text-dark-on-primary hover:bg-opacity-90
 }
 
 .error-interactive-element {
-    @apply bg-error text-on-error dark:bg-dark-error dark:text-dark-on-error hover:bg-opacity-90 focus:bg-opacity-90
+    @apply bg-error text-on-error dark:bg-dark-error dark:text-dark-on-error hover:bg-opacity-90
 }
 
 .primary-interactive-text-element {
-    @apply text-primary bg-primary bg-opacity-0 dark:text-dark-primary dark:bg-dark-primary dark:bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20
+    @apply text-primary bg-primary bg-opacity-0 dark:text-dark-primary dark:bg-dark-primary dark:bg-opacity-0 hover:bg-opacity-20
 }
 
 .error-interactive-text-element {
-    @apply text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20
+    @apply text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20
 }
 
 .center-flex {

@@ -1,17 +1,22 @@
+'use client'; 
+
 import * as React from "react"
+import { useState } from "react";
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
+import 'material-icons/iconfont/filled.css';
+import 'material-icons/iconfont/outlined.css';
 
 const buttonVariants = cva(
   "active:scale-95 py-2 interactive-element label-large center-flex keyboard-accessible disabled-state",
   {
     variants: {
       variant: {
-        default: "primary-interactive-element",
-        error:"error-interactive-element",
-        textDefault: "primary-interactive-text-element",
-        textError: "error-interactive-text-element"
+        primary: "primary-interactive-element",
+        error: "error-interactive-element",
+        textPrimary: "primary-interactive-text-element",
+        textError: "error-interactive-text-element",
       },
       iconPosition:{
         left: "pl-3 pr-4 gap-2",
@@ -20,7 +25,7 @@ const buttonVariants = cva(
       }
     },
     defaultVariants: {
-      variant: "default",
+      variant: "primary",
       iconPosition: "none"
     },
   }
@@ -37,18 +42,21 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, icon, iconPosition, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
+    const [isHovered, setIsHovered] = useState(false);
     return (
       <Comp
         className={cn(buttonVariants({ variant, iconPosition, className }))}
         ref={ref}
         {...props}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         {icon && iconPosition === 'left' && (
-          <span className="material-icons">{icon}</span>
+          <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
         )}
         {props.children}
         {icon && iconPosition === 'right' && (
-          <span className="material-icons">{icon}</span>
+          <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
         )}
       </Comp>
     )

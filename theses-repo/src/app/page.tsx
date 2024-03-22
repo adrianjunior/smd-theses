@@ -1,6 +1,5 @@
 import { Button } from "@/components/button";
-import 'material-icons/iconfont/filled.css';
-import 'material-icons/iconfont/outlined.css';
+import { IconButton } from "@/components/icon-button";
 
 export default function Home() {
   return (
@@ -9,13 +8,17 @@ export default function Home() {
         <Button iconPosition="left" icon="design_services">
           Button Primary
         </Button>
-        <Button variant="error" iconPosition="right" icon="delete_forever">
+        <Button variant="error" iconPosition="left" icon="delete_forever">
           Button Error
           </Button>
-        <Button variant="textDefault" iconPosition="left" icon="design_services">
+        <Button variant="textPrimary" iconPosition="left" icon="design_services">
           Button Text Primary
         </Button>
-        <Button variant="textError">Button Text Error</Button>
+        <Button variant="textError" iconPosition="left" icon="delete_forever">
+          Button Text Error
+          </Button>
+        <IconButton icon="design_services"></IconButton>
+        <IconButton icon="close" variant="error"></IconButton>
       </div>
     </main>
   );
