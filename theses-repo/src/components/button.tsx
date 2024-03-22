@@ -4,14 +4,14 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "py-2 inline-flex items-center justify-center whitespace-nowrap transition-colors rounded-extra-small label-large ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "transition-focus duration-300 rounded-extra-small hover:rounded-extra-large active:scale-95 py-2 inline-flex items-center justify-center whitespace-nowrap label-large keyboard-accessible disabled-state",
   {
     variants: {
       variant: {
-        default: "bg-primary text-on-primary dark:bg-dark-primary dark:text-dark-on-primary hover:bg-opacity-90",
-        error:"bg-error text-on-error dark:bg-dark-error dark:text-dark-on-error hover:bg-opacity-90",
-        textDefault: "text-primary bg-primary bg-opacity-0 dark:text-dark-primary dark:bg-dark-primary dark:bg-opacity-0 hover:bg-opacity-20",
-        textError: "text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20"
+        default: "bg-primary text-on-primary dark:bg-dark-primary dark:text-dark-on-primary hover:bg-opacity-90 focus:bg-opacity-90",
+        error:"bg-error text-on-error dark:bg-dark-error dark:text-dark-on-error hover:bg-opacity-90 focus:bg-opacity-90",
+        textDefault: "text-primary bg-primary bg-opacity-0 dark:text-dark-primary dark:bg-dark-primary dark:bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20",
+        textError: "text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20"
       },
       iconPosition:{
         left: "pl-3 pr-4 gap-2",

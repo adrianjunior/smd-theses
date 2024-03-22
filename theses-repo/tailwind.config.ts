@@ -110,6 +110,12 @@ const config: Config = {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 			},
+			transitionProperty: {
+				focus: 'border-radius, color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow',
+			},
+			transitionDuration: {
+				50: '50ms',
+			},
 		},
 	},
 	plugins: [],
