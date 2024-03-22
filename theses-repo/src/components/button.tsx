@@ -4,14 +4,14 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "transition-focus duration-300 rounded-extra-small hover:rounded-extra-large active:scale-95 py-2 inline-flex items-center justify-center whitespace-nowrap label-large keyboard-accessible disabled-state",
+  "active:scale-95 py-2 interactive-element label-large center-flex keyboard-accessible disabled-state",
   {
     variants: {
       variant: {
-        default: "bg-primary text-on-primary dark:bg-dark-primary dark:text-dark-on-primary hover:bg-opacity-90 focus:bg-opacity-90",
-        error:"bg-error text-on-error dark:bg-dark-error dark:text-dark-on-error hover:bg-opacity-90 focus:bg-opacity-90",
-        textDefault: "text-primary bg-primary bg-opacity-0 dark:text-dark-primary dark:bg-dark-primary dark:bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20",
-        textError: "text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20"
+        default: "primary-interactive-element",
+        error:"error-interactive-element",
+        textDefault: "primary-interactive-text-element",
+        textError: "error-interactive-text-element"
       },
       iconPosition:{
         left: "pl-3 pr-4 gap-2",
