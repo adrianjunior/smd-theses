@@ -1,5 +1,9 @@
-.interactive-element {
-    @apply transition-focus duration-300 rounded-extra-small hover:rounded-extra-large
+.interactive-element-hover {
+    @apply transition-interactive duration-300 rounded-extra-small hover:rounded-extra-large hover:shadow-elevation-4
+}
+
+.interactive-element-active {
+    @apply transition-interactive active:scale-97 active:shadow-none
 }
 
 .primary-interactive-element {
@@ -16,10 +20,6 @@
 
 .error-interactive-text-element {
     @apply text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20
-}
-
-.center-flex {
-    @apply inline-flex items-center justify-center whitespace-nowrap
 }
 
 .keyboard-accessible {

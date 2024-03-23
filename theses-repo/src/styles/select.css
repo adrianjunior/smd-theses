@@ -1,0 +1,23 @@
+.trigger-style[data-state='open'] {
+    @apply 
+    placeholder:text-on-surface 
+    dark:placeholder:text-dark-on-surface 
+    bg-primary 
+    text-on-primary 
+    dark:bg-dark-primary 
+    dark:text-dark-on-primary 
+    rounded-extra-large
+    shadow-elevation-4
+}
+
+.trigger-style[data-state='closed'] {
+    @apply
+    placeholder:text-primary
+    dark:placeholder:text-dark-primary 
+    text-primary 
+    bg-primary bg-opacity-0 
+    dark:text-dark-primary 
+    dark:bg-dark-primary 
+    dark:bg-opacity-0 
+    hover:bg-opacity-20;
+}

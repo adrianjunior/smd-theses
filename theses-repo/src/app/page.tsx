@@ -1,24 +1,29 @@
-import { Button } from "@/components/button";
-import { IconButton } from "@/components/icon-button";
+"use client"
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/atoms/select"
 
 export default function Home() {
   return (
     <main className="dark:bg-dark-surface bg-surface">
       <div className="inline-flex items-center justify-center whitespace-nowrap gap-8 p-8">
-        <Button iconPosition="left" icon="design_services">
-          Button Primary
-        </Button>
-        <Button variant="error" iconPosition="left" icon="delete_forever">
-          Button Error
-          </Button>
-        <Button variant="textPrimary" iconPosition="left" icon="design_services">
-          Button Text Primary
-        </Button>
-        <Button variant="textError" iconPosition="left" icon="delete_forever">
-          Button Text Error
-          </Button>
-        <IconButton icon="design_services"></IconButton>
-        <IconButton icon="close" variant="error"></IconButton>
+        <Select>
+          <SelectTrigger>
+            <span className='material-icons'>sort</span>
+            <SelectValue placeholder="Sort by" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="Semester [9-0]">Semester [9-0]</SelectItem>
+            <SelectItem value="Semester [0-9]">Semester [0-9]</SelectItem>
+            <SelectItem value="Title [A-Z]">Title [A-Z]</SelectItem>
+            <SelectItem value="Title [Z-A]">Title [Z-A]</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
     </main>
   );

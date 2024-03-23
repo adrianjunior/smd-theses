@@ -9,7 +9,7 @@ import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
 
 const buttonVariants = cva(
-  "active:scale-95 py-2 interactive-element label-large center-flex keyboard-accessible disabled-state",
+  "interactive-element-hover interactive-element-active label-large center-button keyboard-accessible disabled-state py-2",
   {
     variants: {
       variant: {
