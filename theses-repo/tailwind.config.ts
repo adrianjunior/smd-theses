@@ -67,6 +67,9 @@ const config: Config = {
         'extra-large': '1.75rem',
         'full': '9999px',
       },
+      borderWidth: {
+        3: '3px'
+      },
       boxShadow: {
         'elevation-4': '4px 4px 4px 0px rgba(0, 0, 0, 0.4)',
         'elevation-5': '8px 8px 8px 0px rgba(0, 0, 0, 0.4)',

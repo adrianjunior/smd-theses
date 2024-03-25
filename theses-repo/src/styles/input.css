@@ -1,0 +1,75 @@
+.input-layout {
+    @apply 
+    flex
+    h-10
+    w-full
+    pl-4
+}
+
+.input-style {
+    @apply
+
+    border
+    text-title-small
+    font-semibold
+    placeholder:text-body-medium
+    placeholder:font-normal
+    placeholder:text-on-primary-container
+    dark:placeholder:text-dark-on-primary-container
+
+    pr-12
+    rounded-extra-large
+    border-outline
+    bg-primary
+    text-on-primary
+    dark:border-dark-outline
+    dark:bg-dark-primary
+    dark:text-dark-on-primary
+
+    placeholder-shown:pr-3
+    placeholder-shown:rounded-extra-small
+    placeholder-shown:border-outline-variant
+    placeholder-shown:bg-primary-container
+    placeholder-shown:text-on-primary-container
+    placeholder-shown:dark:border-dark-outline-variant
+    placeholder-shown:dark:bg-dark-primary-container
+    placeholder-shown:dark:text-dark-on-primary-container
+
+    file:border-0
+    file:bg-transparent
+    file:border-outline
+    dark:file:border-dark-outline
+}
+
+.input-hover {
+    @apply
+    transition-interactive
+    duration-300
+    hover:rounded-extra-large
+    hover:border-2
+    hover:shadow-elevation-4
+    hover:bg-opacity-90   
+}
+
+.input-focus {
+    @apply 
+    transition-interactive
+    focus:outline-none
+    focus:rounded-extra-large
+    focus:border-2
+    focus:shadow-elevation-4
+    focus:border-outline
+    focus:bg-primary
+    focus:text-on-primary
+    focus:placeholder:text-on-primary
+    dark:focus:border-dark-outline
+    dark:focus:bg-dark-primary
+    dark:focus:text-dark-on-primary
+    dark:focus:placeholder:text-dark-on-primary
+}
+
+.input-disabled {
+    @apply
+    disabled:cursor-not-allowed
+    disabled:opacity-30
+}

@@ -22,13 +22,12 @@
     @apply text-error bg-error bg-opacity-0 dark:text-dark-error dark:bg-dark-error dark:bg-opacity-0 hover:bg-opacity-20
 }
 
+.primary-container-interactive-element {
+    @apply bg-primary-container text-on-primary-container dark:bg-dark-primary-container dark:text-dark-on-primary-container hover:bg-opacity-90
+}
+
 .keyboard-accessible {
-    @apply 
-    focus-visible:outline-none
-    focus-visible:ring 
-    focus-visible:ring-offset-2
-    ring-offset-white dark:ring-offset-black 
-    focus-visible:ring-primary dark:focus-visible:ring-dark-primary 
+    @apply focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 ring-offset-white dark:ring-offset-black focus-visible:ring-primary dark:focus-visible:ring-dark-primary
 }
 
 .disabled-state {

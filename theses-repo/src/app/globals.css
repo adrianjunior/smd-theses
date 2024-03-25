@@ -3,6 +3,8 @@
 @import '../styles/general-styles.css';
 @import '../styles/button.css';
 @import '../styles/select.css';
+@import '../styles/filter-chip.css';
+@import '../styles/input.css';
 
 @tailwind base;
 @tailwind components;
