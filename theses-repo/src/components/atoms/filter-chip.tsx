@@ -1,3 +1,5 @@
+'use client'; 
+
 import * as React from "react";
 import { useState } from "react";
 import { Slot } from "@radix-ui/react-slot";
@@ -7,13 +9,12 @@ import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
 
 const filterChipVariants = cva(
-  "interactive-element-hover interactive-element-active label-large center-button keyboard-accessible disabled-state py-2",
+  "filter-chip-layout filter-chip-active filter-chip-disabled filter-chip-keyboard",
   {
     variants: {
       iconPosition: {
-        left: "pl-3 pr-4 gap-2",
-        right: "pl-4 pr-3 gap-2",
-        none: "pl-4 pr-4 gap-2",
+        left: "filter-chip-icon-left",
+        none: "filter-chip-icon-none",
       },
     },
     defaultVariants: {
@@ -43,13 +44,15 @@ const FilterChip = React.forwardRef<HTMLButtonElement, FilterChipProps>(
       <Comp
         className={cn(
             filterChipVariants({ iconPosition, className }),
-          isActive && 'primary-interactive-element filter-chip-transition',
-          !isActive && 'primary-container-interactive-element filter-chip-transition'
+          isActive && 'filter-chip-primary',
+          !isActive && 'filter-chip-primary-container'
         )}
         ref={ref}
         {...props}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onFocus={() => setIsHovered(true)}
+        onBlur={() => setIsHovered(false)}
         onClick={toggleActive}
       >
         {icon && iconPosition === 'left' && !isActive && (
@@ -62,6 +65,7 @@ const FilterChip = React.forwardRef<HTMLButtonElement, FilterChipProps>(
             done
           </span>
         )}
+        
         {props.children}
       </Comp>
     );

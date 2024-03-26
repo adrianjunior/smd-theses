@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import '../styles/typography.css';
-@import '../styles/general-styles.css';
-@import '../styles/button.css';
-@import '../styles/select.css';
-@import '../styles/filter-chip.css';
-@import '../styles/input.css';
+@import '../styles/atoms/button.css';
+@import '../styles/atoms/filter-chip.css';
+@import '../styles/atoms/icon-button.css';
+@import '../styles/atoms/input.css';
+@import '../styles/atoms/select.css';
 
 @tailwind base;
 @tailwind components;

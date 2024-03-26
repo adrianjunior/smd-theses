@@ -9,19 +9,19 @@ import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
 
 const buttonVariants = cva(
-  "interactive-element-hover interactive-element-active label-large center-button keyboard-accessible disabled-state py-2",
+  "button-layout button-hover button-active button-disabled button-keyboard",
   {
     variants: {
       variant: {
-        primary: "primary-interactive-element",
-        error: "error-interactive-element",
-        textPrimary: "primary-interactive-text-element",
-        textError: "error-interactive-text-element",
+        primary: "button-primary",
+        error: "button-error",
+        textPrimary: "text-button-primary",
+        textError: "text-button-error",
       },
       iconPosition:{
-        left: "pl-3 pr-4 gap-2",
-        right: "pl-4 pr-3 gap-2",
-        none: "pl-4 pr-4"
+        left: "button-icon-left",
+        right: "button-icon-right",
+        none: "button-icon-none"
       }
     },
     defaultVariants: {
@@ -50,6 +50,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onFocus={() => setIsHovered(true)}
+        onBlur={() => setIsHovered(false)}
       >
         {icon && iconPosition === 'left' && (
           <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>

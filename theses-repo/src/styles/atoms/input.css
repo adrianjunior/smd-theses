@@ -58,14 +58,20 @@
     focus:rounded-extra-large
     focus:border-2
     focus:shadow-elevation-4
+    focus-visible:ring 
+    focus-visible:ring-offset-3
     focus:border-outline
     focus:bg-primary
     focus:text-on-primary
     focus:placeholder:text-on-primary
+    focus-visible:ring-primary 
+    ring-offset-white 
     dark:focus:border-dark-outline
     dark:focus:bg-dark-primary
     dark:focus:text-dark-on-primary
     dark:focus:placeholder:text-dark-on-primary
+    dark:focus-visible:ring-dark-primary
+    dark:ring-offset-black 
 }
 
 .input-disabled {

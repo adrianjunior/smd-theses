@@ -1,0 +1,88 @@
+.filter-chip-layout {
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    whitespace-nowrap
+    text-label-large
+    font-medium
+    py-2
+}
+
+.filter-chip-active {
+    @apply
+    active:scale-97
+    active:shadow-none
+}
+
+.filter-chip-disabled {
+    @apply 
+    disabled:pointer-events-none 
+    disabled:opacity-30
+}
+
+.filter-chip-keyboard {
+    @apply 
+    focus-visible:outline-none 
+    focus-visible:ring 
+    focus-visible:ring-offset-2
+    ring-offset-white 
+    dark:ring-offset-black 
+    focus-visible:ring-primary 
+    dark:focus-visible:ring-dark-primary
+}
+
+.filter-chip-icon-left {
+    @apply 
+    pl-3 
+    pr-4 
+    gap-2
+}
+
+.filter-chip-icon-none {
+    @apply 
+    pl-4
+    pr-4
+    gap-2
+}
+
+.filter-chip-primary-container {
+    @apply
+    transition-interactive
+    duration-300
+
+    rounded-extra-small
+    hover:rounded-extra-large
+    focus-visible:rounded-extra-large
+
+    hover:shadow-elevation-4
+    focus-visible:shadow-elevation-4
+
+    text-on-primary-container
+    bg-primary-container
+    dark:text-dark-on-primary-container
+    dark:bg-dark-primary-container
+
+    hover:bg-opacity-90
+    focus-visible:bg-opacity-90
+}
+
+.filter-chip-primary {
+    @apply
+    transition-interactive
+    duration-300
+
+    rounded-extra-large
+
+    hover:shadow-elevation-4
+    focus-visible:shadow-elevation-4
+
+    text-on-primary
+    bg-primary
+    dark:bg-dark-primary
+    dark:text-dark-on-primary
+
+    hover:bg-opacity-90
+    focus-visible:bg-opacity-90
+}
+

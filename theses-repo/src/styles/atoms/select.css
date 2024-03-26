@@ -1,0 +1,138 @@
+.select-trigger-layout {
+    @apply
+    flex
+    w-full
+    items-center
+    justify-between
+    text-label-large
+    font-medium
+    pr-3
+    pl-4
+    py-2
+    gap-3
+}
+
+.select-trigger-hover {
+    @apply
+    transition-interactive
+    duration-300
+    rounded-extra-small
+    hover:rounded-extra-large
+    hover:shadow-elevation-4
+}
+
+.select-trigger-active {
+    @apply
+    transition-interactive
+    active:scale-97
+    active:shadow-none
+}
+
+.select-trigger-disabled {
+    @apply 
+    disabled:pointer-events-none 
+    disabled:opacity-30
+}
+
+.select-trigger-keyboard {
+    @apply 
+    focus-visible:outline-none 
+    focus-visible:ring 
+    focus-visible:ring-offset-2 
+    ring-offset-white 
+    dark:ring-offset-black 
+    focus-visible:ring-primary 
+    dark:focus-visible:ring-dark-primary
+}
+
+.select-trigger-style[data-state='open'] {
+    @apply 
+    placeholder:text-on-surface 
+    dark:placeholder:text-dark-on-surface 
+    bg-primary 
+    text-on-primary 
+    dark:bg-dark-primary 
+    dark:text-dark-on-primary 
+    rounded-extra-large
+    shadow-elevation-4
+}
+
+.select-trigger-style[data-state='closed'] {
+    @apply
+    placeholder:text-primary
+    dark:placeholder:text-dark-primary 
+    text-primary 
+    bg-primary bg-opacity-0 
+    dark:text-dark-primary 
+    dark:bg-dark-primary 
+    dark:bg-opacity-0 
+    hover:bg-opacity-20;
+}
+
+.select-scroll-style {
+    @apply
+    flex
+    cursor-default
+    items-center
+    justify-center
+    py-1
+}
+
+.select-content-layout {
+    @apply
+    relative
+    z-50
+    max-h-96
+    min-w-[8rem]
+    py-2
+    pr-1
+    pl-2
+    overflow-hidden
+}
+
+.select-content-style {
+    @apply
+    rounded-extra-small
+    border
+    shadow-elevation-4
+    border-primary-container
+    bg-primary-container
+    text-primary
+    dark:border-dark-primary-container
+    dark:bg-dark-primary-container
+    dark:text-dark-primary
+}
+
+.select-item-layout {
+    @apply
+    relative
+    flex
+    w-full
+    cursor-default
+    select-none
+    items-center
+    py-2
+    pl-4
+    pr-12
+}
+
+.select-item-style {
+    @apply
+    rounded-full
+    text-label-large
+    font-medium
+    outline-none 
+    focus:bg-primary/20
+    dark:focus:bg-dark-primary/20
+}
+
+.select-item-icon {
+    @apply
+    absolute
+    top-2
+    right-3
+    flex
+    items-center
+    justify-center
+}
+

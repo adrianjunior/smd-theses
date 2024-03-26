@@ -1,0 +1,82 @@
+.icon-button-layout {
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    whitespace-nowrap
+    px-2
+    py-2
+} 
+
+.icon-button-hover {
+    @apply
+    transition-interactive
+    duration-300
+    rounded-extra-small
+    hover:rounded-extra-large
+    hover:shadow-elevation-4
+}
+
+.icon-button-active {
+    @apply
+    transition-interactive
+    active:scale-97
+    active:shadow-none
+}
+
+.icon-button-filled-primary {
+    @apply
+    bg-primary
+    text-on-primary
+    dark:bg-dark-primary
+    dark:text-dark-on-primary
+    hover:bg-opacity-90
+}
+
+.icon-button-filled-error {
+    @apply 
+    bg-error 
+    text-on-error 
+    dark:bg-dark-error 
+    dark:text-dark-on-error 
+    hover:bg-opacity-90
+}
+
+.icon-button-primary {
+    @apply 
+    text-primary 
+    bg-primary 
+    bg-opacity-0 
+    dark:text-dark-primary 
+    dark:bg-dark-primary 
+    dark:bg-opacity-0 
+    hover:bg-opacity-20
+}
+
+.icon-button-error {
+    @apply 
+    text-error 
+    bg-error 
+    bg-opacity-0 
+    dark:text-dark-error 
+    dark:bg-dark-error 
+    dark:bg-opacity-0 
+    hover:bg-opacity-20
+}
+
+.icon-button-disabled {
+    @apply 
+    disabled:pointer-events-none 
+    disabled:opacity-30
+}
+
+.icon-button-keyboard {
+    @apply 
+    focus-visible:outline-none 
+    focus-visible:ring 
+    focus-visible:ring-offset-2 
+    ring-offset-white 
+    dark:ring-offset-black 
+    focus-visible:ring-primary 
+    dark:focus-visible:ring-dark-primary
+}

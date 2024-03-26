@@ -9,12 +9,12 @@ import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
 
 const iconButtonVariants = cva(
-    "interactive-element-hover interactive-element-active center-button keyboard-accessible disabled-state py-2 px-2",
+    "icon-button-layout icon-button-hover icon-button-active icon-button-keyboard icon-button-disabled",
     {
         variants: {
             variant: {
-                primary: "primary-interactive-text-element",
-                error: "error-interactive-text-element"
+                primary: "icon-button-primary",
+                error: "icon-button-error"
             }
         },
         defaultVariants: {
