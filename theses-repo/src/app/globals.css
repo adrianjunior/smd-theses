@@ -4,6 +4,7 @@
 @import '../styles/atoms/icon-button.css';
 @import '../styles/atoms/input.css';
 @import '../styles/atoms/select.css';
+@import '../styles/atoms/popover.css';
 
 @tailwind base;
 @tailwind components;

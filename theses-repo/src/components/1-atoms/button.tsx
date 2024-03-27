@@ -9,7 +9,7 @@ import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
 
 const buttonVariants = cva(
-  "button-layout button-hover button-active button-disabled button-keyboard",
+  "button-layout button-hover button-disabled button-keyboard",
   {
     variants: {
       variant: {
@@ -17,6 +17,7 @@ const buttonVariants = cva(
         error: "button-error",
         textPrimary: "text-button-primary",
         textError: "text-button-error",
+        textPrimaryActivated: "text-button-primary-activated"
       },
       iconPosition:{
         left: "button-icon-left",
@@ -54,11 +55,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         onBlur={() => setIsHovered(false)}
       >
         {icon && iconPosition === 'left' && (
-          <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
+          <span className={cn(isHovered || variant=="textPrimaryActivated" ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
         )}
         {props.children}
         {icon && iconPosition === 'right' && (
-          <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
+          <span className={cn(isHovered || variant=="textPrimaryActivated" ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
         )}
       </Comp>
     )

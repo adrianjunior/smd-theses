@@ -36,7 +36,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         />
         {showClearIcon && (
           <button
-            className="flex items-center absolute right-3 top-1/2 -translate-y-1/2"
+            className="input-close-icon"
             onClick={handleClear}
           >
             <span className="material-icons" style={{ fontSize: '20px' }}>

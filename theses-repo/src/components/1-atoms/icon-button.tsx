@@ -42,6 +42,8 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
                 ref={ref}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onFocus={() => setIsHovered(true)}
+                onBlur={() => setIsHovered(false)}
             >
                 {icon && (
                     <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>

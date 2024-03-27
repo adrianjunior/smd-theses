@@ -11,7 +11,7 @@ import {
 } from "react-hook-form"
 
 import { cn } from "@/lib/utils"
-import { Label } from "@/components/atoms/label"
+import { Label } from "@/components/1-atoms/label"
 
 const Form = FormProvider
 
@@ -78,7 +78,7 @@ const FormItem = React.forwardRef<
 
   return (
     <FormItemContext.Provider value={{ id }}>
-      <div ref={ref} className={cn("space-y-2", className)} {...props} />
+      <div ref={ref} className={cn("space-y-1", className)} {...props} />
     </FormItemContext.Provider>
   )
 })
@@ -123,23 +123,6 @@ const FormControl = React.forwardRef<
 })
 FormControl.displayName = "FormControl"
 
-const FormDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
->(({ className, ...props }, ref) => {
-  const { formDescriptionId } = useFormField()
-
-  return (
-    <p
-      ref={ref}
-      id={formDescriptionId}
-      className={cn("label-small text-primary dark:text-dark-primary", className)}
-      {...props}
-    />
-  )
-})
-FormDescription.displayName = "FormDescription"
-
 const FormMessage = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
@@ -170,7 +153,6 @@ export {
   FormItem,
   FormLabel,
   FormControl,
-  FormDescription,
   FormMessage,
   FormField,
 }

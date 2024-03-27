@@ -1,0 +1,20 @@
+.popover-layout {
+    @apply
+    z-50
+    w-64
+    p-4
+    outline-none
+}
+
+.popover-style {
+    @apply
+    rounded-extra-small
+    border
+    shadow-elevation-4
+    border-primary-container
+    bg-primary-container
+    text-on-surface
+    dark:border-dark-primary-container
+    dark:bg-dark-primary-container
+    dark:text-dark-on-surface
+}

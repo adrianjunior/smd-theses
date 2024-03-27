@@ -34,6 +34,8 @@
     placeholder-shown:dark:border-dark-outline-variant
     placeholder-shown:dark:bg-dark-primary-container
     placeholder-shown:dark:text-dark-on-primary-container
+    placeholder-shown:hover:bg-opacity-90
+    placeholder-shown:hover:shadow-none
 
     file:border-0
     file:bg-transparent
@@ -47,8 +49,8 @@
     duration-300
     hover:rounded-extra-large
     hover:border-2
+    hover:bg-opacity-100
     hover:shadow-elevation-4
-    hover:bg-opacity-90   
 }
 
 .input-focus {
@@ -78,4 +80,15 @@
     @apply
     disabled:cursor-not-allowed
     disabled:opacity-30
+}
+
+.input-close-icon {
+    @apply
+    flex
+    items-center
+    absolute right-3
+    top-1/2
+    -translate-y-1/2
+    text-on-primary
+    dark:text-dark-on-primary
 }

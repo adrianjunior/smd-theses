@@ -1,7 +1,6 @@
 .select-trigger-layout {
     @apply
     flex
-    w-full
     items-center
     justify-between
     text-label-large
@@ -18,12 +17,10 @@
     duration-300
     rounded-extra-small
     hover:rounded-extra-large
-    hover:shadow-elevation-4
 }
 
 .select-trigger-active {
     @apply
-    transition-interactive
     active:scale-97
     active:shadow-none
 }
@@ -43,6 +40,8 @@
     dark:ring-offset-black 
     focus-visible:ring-primary 
     dark:focus-visible:ring-dark-primary
+    focus-visible:rounded-extra-large
+    focus-visible:shadow-elevation-4
 }
 
 .select-trigger-style[data-state='open'] {
@@ -66,7 +65,8 @@
     dark:text-dark-primary 
     dark:bg-dark-primary 
     dark:bg-opacity-0 
-    hover:bg-opacity-20;
+    hover:bg-opacity-16
+    focus-visible:bg-opacity-16
 }
 
 .select-scroll-style {
@@ -107,7 +107,6 @@
     @apply
     relative
     flex
-    w-full
     cursor-default
     select-none
     items-center

@@ -33,12 +33,10 @@ export interface FilterChipProps
 }
 
 const FilterChip = React.forwardRef<HTMLButtonElement, FilterChipProps>(
-  ({ className, icon, iconPosition, asChild = false, activated = false, ...props }, ref) => {
+  ({ className, icon, iconPosition, asChild = false, activated, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
     const [isHovered, setIsHovered] = useState(false);
-    const [isActive, setIsActive] = useState(activated); 
-
-    const toggleActive = () => setIsActive(!isActive);
+    const [isActive] = useState(activated); 
 
     return (
       <Comp
@@ -53,7 +51,6 @@ const FilterChip = React.forwardRef<HTMLButtonElement, FilterChipProps>(
         onMouseLeave={() => setIsHovered(false)}
         onFocus={() => setIsHovered(true)}
         onBlur={() => setIsHovered(false)}
-        onClick={toggleActive}
       >
         {icon && iconPosition === 'left' && !isActive && (
           <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>

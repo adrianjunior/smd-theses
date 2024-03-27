@@ -1,12 +1,22 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
         //light Mode
@@ -18,7 +28,6 @@ const config: Config = {
         "error": "#93000a",
         "on-error": "#f5f5f5",
         "error-container": "#ffdad6",
-        "error-container-focus": "#D6C1CD",
         "on-error-container": "#690005",
         "surface": "#eeeeee",
         "on-surface": "#333333",
@@ -44,7 +53,6 @@ const config: Config = {
         "dark-error": "#ff897d",
         "dark-on-error": "#111111",
         "dark-error-container": "#410002",
-        "dark-error-container-focus" : "#4C1B2B",
         "dark-on-error-container": "#ffdad6",
         "dark-surface": "#222222",
         "dark-on-surface": "#dddddd",
@@ -125,8 +133,11 @@ const config: Config = {
       ringOffsetWidth: {
         3: '3px',
       },
+      opacity: {
+        16: '0.16',
+      },
     },
   },
-  plugins: [],
-};
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config;
 export default config;

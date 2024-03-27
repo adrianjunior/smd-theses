@@ -65,6 +65,9 @@
 
     hover:bg-opacity-90
     focus-visible:bg-opacity-90
+
+    active:scale-97
+    active:shadow-none
 }
 
 .filter-chip-primary {
@@ -84,5 +87,8 @@
 
     hover:bg-opacity-90
     focus-visible:bg-opacity-90
+
+    active:scale-97
+    active:shadow-none
 }
 
