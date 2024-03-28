@@ -5,6 +5,7 @@
 @import '../styles/atoms/input.css';
 @import '../styles/atoms/select.css';
 @import '../styles/atoms/popover.css';
+@import '../styles/atoms/card.css';
 
 @tailwind base;
 @tailwind components;

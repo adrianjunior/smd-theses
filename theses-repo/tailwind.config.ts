@@ -13,9 +13,6 @@ const config: Config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       colors: {
@@ -48,7 +45,7 @@ const config: Config = {
         "dark-primary": "#86a9ff",
         "dark-on-primary": "#111111",
         "dark-primary-container": "#001945",
-        "dark-primary-container-focus" : "#153063",
+        "dark-primary-container-focus": "#153063",
         "dark-on-primary-container": "#d9e2ff",
         "dark-error": "#ff897d",
         "dark-on-error": "#111111",
@@ -135,6 +132,13 @@ const config: Config = {
       },
       opacity: {
         16: '0.16',
+      },
+      screens: {
+        sm: '600px',
+        md: '1000px',
+        lg: '1400px',
+        xl: '1920px',
+        'uw': '2560px',
       },
     },
   },
