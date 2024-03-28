@@ -1,0 +1,51 @@
+.thesis-card-link {
+    @apply self-stretch text-primary text-title-medium font-bold underline
+}
+
+.thesis-card-column {
+    @apply flex flex-col items-start
+}
+
+.thesis-card-line {
+    @apply flex flex-row items-start flex-wrap
+}
+
+.thesis-card-expand[data-expanded='false'] {
+    @apply max-h-0 overflow-hidden transition-card-expand duration-200
+}
+
+.thesis-card-expand[data-expanded='true'] {
+    @apply max-h-fit overflow-hidden transition-card-expand duration-500
+}
+
+.dropdown-icon[data-expanded='false'] {
+    @apply transition-all duration-200
+}
+
+.dropdown-icon[data-expanded='true'] {
+    @apply rotate-180 transition-all duration-500
+}
+
+.thesis-card-style[data-expanded='false'] {
+    @apply 
+    sm:bg-surface-container
+    lg:bg-surface-container-high
+    text-on-surface
+    sm:dark:bg-dark-surface-container
+    lg:dark:bg-dark-surface-container-high
+    dark:text-dark-on-surface
+    transition-colors
+    duration-200
+}
+
+.thesis-card-style[data-expanded='true'] {
+    @apply
+    sm:bg-primary-container
+    lg:bg-primary-container
+    text-on-primary-container
+    sm:dark:bg-dark-primary-container
+    lg:dark:bg-dark-primary-container
+    dark:text-dark-on-primary-container
+    transition-colors
+    duration-500
+}

@@ -123,6 +123,7 @@ const config: Config = {
       },
       transitionProperty: {
         interactive: 'border-radius, color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow',
+        "card-expand": 'max-width, max-height'
       },
       scale: {
         97: '.97',

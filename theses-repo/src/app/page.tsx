@@ -22,14 +22,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/1-atoms/popover"
-import {
-  Card,
-  CardContent,
-  CardFooter
-} from "@/components/1-atoms/card"
+
 import { IconButton } from "@/components/1-atoms/icon-button"
 import { Input } from "@/components/1-atoms/input"
-import { Separator } from "@/components/1-atoms/separator"
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -38,6 +33,7 @@ import { Label } from "@/components/1-atoms/label"
 import { useMemo, useState } from "react"
 
 import 'material-icons/iconfont/filled.css';
+import { ThesisCard } from "@/components/2-molecules/thesis-card"
 
 
 const formSchema = z.object({
@@ -158,18 +154,7 @@ export default function Home() {
           </div>
         </PopoverContent>
       </Popover>
-      <Card>
-        <CardContent>
-          <p>Card Content 1</p>
-          <p>Card Content 2</p>
-          <p>Card Content 3</p>
-        </CardContent>
-        <Separator/>
-        <CardFooter onClick={() => console.log("Filter Chip State: " + filterChipState)}>
-          <span className="material-icons">arrow_drop_down</span>
-          <p>Card Footer</p>
-        </CardFooter>
-      </Card>
+      <ThesisCard/>
     </main>
   );
 }
