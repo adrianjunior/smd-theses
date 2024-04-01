@@ -107,7 +107,7 @@ export default function Home() {
       </Form>
       <Popover onOpenChange={popoverButtonStateChange}>
         <PopoverTrigger asChild>
-          <Button icon="settings" iconPosition="left" variant={popoverButtonState ? 'textPrimary' : 'textPrimaryActivated'} key={popoverButtonKey}>Open/Close</Button>
+          <Button icon="settings" iconPosition="left" variant={popoverButtonState ? 'textPrimaryActivated' : 'textPrimary'} key={popoverButtonKey}>Open/Close</Button>
         </PopoverTrigger>
         <PopoverContent className="w-80">
           <div className="grid gap-4">

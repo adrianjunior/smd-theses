@@ -1,5 +1,5 @@
 .thesis-card-link {
-    @apply self-stretch text-primary text-title-medium font-bold underline
+    @apply self-stretch text-primary text-title-medium font-bold underline visited:text-purple-700 visited:dark:text-purple-400
 }
 
 .thesis-card-column {
@@ -10,6 +10,10 @@
     @apply flex flex-row items-start flex-wrap
 }
 
+.thesis-card-responsive {
+    @apply flex sm:flex-col lg:flex-row items-start lg:flex-wrap lg:gap-1
+}
+
 .thesis-card-expand[data-expanded='false'] {
     @apply max-h-0 overflow-hidden transition-card-expand duration-200
 }
@@ -18,11 +22,11 @@
     @apply max-h-fit overflow-hidden transition-card-expand duration-500
 }
 
-.dropdown-icon[data-expanded='false'] {
+.thesis-card-dropdown[data-expanded='false'] {
     @apply transition-all duration-200
 }
 
-.dropdown-icon[data-expanded='true'] {
+.thesis-card-dropdown[data-expanded='true'] {
     @apply rotate-180 transition-all duration-500
 }
 

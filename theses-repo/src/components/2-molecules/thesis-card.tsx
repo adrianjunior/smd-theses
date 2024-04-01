@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
+import { cn } from "@/lib/utils";
 
 export function ThesisCard() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -31,17 +32,17 @@ export function ThesisCard() {
                     DESENVOLVIMENTO DE JOGOS EDUCATIVOS CONTROLADOS VIA INTERFACE CÉREBRO-COMPUTADOR: UMA REVISÃO SISTEMÁTICA DA LITERATURA
                 </a>
                 <div className="thesis-card-column">
-                    <div className="sm:thesis-card-line lg:thesis-card-column gap-1">
+                    <div className="thesis-card-responsive">
                         <p className="text-on-surface-variant">Autor(a)</p>
                         <p>Thais Ribeiro Barroso Torres</p>
                     </div>
-                    <div className="sm:thesis-card-line lg:thesis-card-column gap-1">
+                    <div className="thesis-card-responsive">
                         <p className="text-on-surface-variant">Orientador(a)</p>
                         <p>Edgar Marçal de Barros Filho</p>
                     </div>
                 </div>
                 <div className="thesis-card-line gap-x-2 gap-y-1">
-                    <span className="material-icons-outlined">school</span>
+                    <span className={cn(isExpanded ? 'material-icons' : 'material-icons-outlined')}>school</span>
                     <p>Tecnologia Educativa</p>
                     <p>•</p>
                     <p>Monografia</p>
@@ -66,8 +67,11 @@ export function ThesisCard() {
             </CardContent>
             <Separator />
             <CardFooter onClick={() => setIsExpanded(!isExpanded)}>
-                <span className='material-icons dropdown-icon' data-expanded={isExpanded}>arrow_drop_down</span>
-                <p>Ver mais</p>
+                <span className='material-icons thesis-card-dropdown' data-expanded={isExpanded}>arrow_drop_down</span>
+                <p>
+                    { !isExpanded && <span>Ver mais</span> }
+                    { isExpanded && <span>Ver menos</span> }
+                </p>
             </CardFooter>
         </Card>
     );
