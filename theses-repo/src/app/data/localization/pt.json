@@ -1,0 +1,184 @@
+{
+    "Index": {
+        "paths": {
+            "design": {
+                "long": "Design Digital e Interativo",
+                "short": "Design"
+            },
+            "systems": {
+                "long": "Sistemas Multimídia",
+                "short": "Sistemas"
+            },
+            "audiovisual": {
+                "long": "Animação e Audiovisual",
+                "short": "Audiovisual"
+            },
+            "games": {
+                "long": "Jogos Digitais",
+                "short": "Jogos"
+            },
+            "education": {
+                "long": "Tecnologia Educativa",
+                "short": "Educação"
+            }
+        },
+        "types": {
+            "paper": {
+                "long": "Artigo",
+                "short": "Artigo"
+            },
+            "monograph": {
+                "long": "Monografia",
+                "short": "Monografia"
+            },
+            "report": {
+                "long": "Relatório Técnico",
+                "short": "Rel. Técnico"
+            }
+        },
+        "labels": {
+            "author": {
+                "long": "Autor(a)",
+                "short": "Autor(a)"
+            },
+            "supervisor": {
+                "long": "Orientador(a)",
+                "short": "Orientador(a)"
+            },
+            "objective": {
+                "long": "Resumo do objetivo",
+                "short": "Objetivo"
+            },
+            "keywords": {
+                "long": "Palavras-chave",
+                "short": "Palavras-chave"
+            },
+            "more-info": {
+                "long": "Mais informações",
+                "short": "Ver mais"
+            },
+            "less-info": {
+                "long": "Menos informações",
+                "short": "Ver menos"
+            },
+            "filters": {
+                "long": "Filtros",
+                "short": "Filtros"
+            },
+            "confirm-filters": {
+                "long": "Confirmar filtros",
+                "short": "Confirmar"
+            },
+            "clear-filter": {
+                "long": "Limpar filtro",
+                "short": "Limpar"
+            },
+            "clear-all-filters": {
+                "long": "Limpar tudo",
+                "short": "Limpar tudo"
+            },
+            "work-title": {
+                "long": "Título do trabalho",
+                "short": "Título"
+            },
+            "theme": {
+                "long": "Tema",
+                "short": "Tema"
+            },
+            "dark-theme": {
+                "long": "Escuro",
+                "short": "Escuro"
+            },
+            "light-theme": {
+                "long": "Claro",
+                "short": "Claro"
+            },
+            "language": {
+                "long": "Idioma",
+                "short": "Idioma"
+            },
+            "portuguese": {
+                "long": "Português (BR)",
+                "short": "Português (BR)"
+            },
+            "english": {
+                "long": "English",
+                "short": "English"
+            }
+        },
+        "headers": {
+            "work-list": {
+                "long": "Lista de TCCs",
+                "short": "Lista de TCCs"
+            },
+            "filter": {
+                "long": "Filtrar trabalhos",
+                "short": "Filtrar"
+            },
+            "main-information": {
+                "long": "Informações Principais",
+                "short": "Informações Principais"
+            },
+            "paths": {
+                "long": "Trilhas",
+                "short": "Trilhas"
+            },
+            "work-type": {
+                "long": "Tipo de Trabalho",
+                "short": "Tipo"
+            },
+            "settings": {
+                "long": "Configurações",
+                "short": "Configurações"
+            },
+            "app-header": {
+                "long": "Repositório Institucional para Trabalhos de Conclusão de Curso",
+                "short": "Repositório de TCCs"
+            },
+            "works-on-list": {
+                "long": "Mostrando x trabalhos",
+                "short": "Mostrando x trabalhos"
+            },
+            "developed-by": {
+                "long": "Projetado e Desenvolvido por",
+                "short": "Desenvolvido por"
+            }
+        },
+        "order": {
+            "sort": {
+                "long": "Ordenar por",
+                "short": "Ordenar por"
+            },
+            "by-semester-asc": {
+                "long": "Semestre [0-9]",
+                "short": "Semestre[0-9]"
+            },
+            "by-semester-desc": {
+                "long": "Semestre [9-0]",
+                "short": "Semestre[9-0]"
+            },
+            "alphabetical-asc": {
+                "long": "Titulo [A-Z]",
+                "short": "Titulo[A-Z]"
+            },
+            "alphabetical-desc": {
+                "long": "Titulo [Z-A]",
+                "short": "Titulo[Z-A]"
+            }
+        },
+        "hints": {
+            "work-title": {
+                "long": "ex: Design e Desenvolvimento de um Repositório Institucional para Trabalhos de Conclusão de Curso de Sistemas e Mídias Digitais",
+                "short": "ex: Design"
+            },
+            "author": {
+                "long": "ex: Adrian Rausley Ferreira Pinto Junior",
+                "short": "ex: Adrian"
+            },
+            "supervisor": {
+                "long": "ex: Antônio José Melo Leite Júnior",
+                "short": "ex: Melo"
+            }
+        }
+    }
+}

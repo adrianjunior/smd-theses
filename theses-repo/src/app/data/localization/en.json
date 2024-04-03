@@ -1,0 +1,184 @@
+{
+    "Index": {
+        "paths": {
+            "design": {
+                "long": "Interaction and Digital Design",
+                "short": "Design"
+            },
+            "systems": {
+                "long": "Multimedia Systems",
+                "short": "Systems"
+            },
+            "audiovisual": {
+                "long": "Audiovisual and Animation",
+                "short": "Audiovisual"
+            },
+            "games": {
+                "long": "Digital Games",
+                "short": "Games"
+            },
+            "education": {
+                "long": "Education Technology",
+                "short": "Education"
+            }
+        },
+        "types": {
+            "paper": {
+                "long": "Paper",
+                "short": "Paper"
+            },
+            "monograph": {
+                "long": "Monograph",
+                "short": "Monograph"
+            },
+            "report": {
+                "long": "Technical Report",
+                "short": "Tech. Report"
+            }
+        },
+        "labels": {
+            "author": {
+                "long": "Author",
+                "short": "Author"
+            },
+            "supervisor": {
+                "long": "Supervisor",
+                "short": "Supervisor"
+            },
+            "objective": {
+                "long": "Objective Summary",
+                "short": "Objective"
+            },
+            "keywords": {
+                "long": "Keywords",
+                "short": "Keywords"
+            },
+            "more-info": {
+                "long": "More information",
+                "short": "View more"
+            },
+            "less-info": {
+                "long": "Less information",
+                "short": "View less"
+            },
+            "filters": {
+                "long": "Filters",
+                "short": "Filters"
+            },
+            "confirm-filters": {
+                "long": "Confirm filters",
+                "short": "Confirm"
+            },
+            "clear-filter": {
+                "long": "Clear filter",
+                "short": "Clear"
+            },
+            "clear-all-filters": {
+                "long": "Clear all",
+                "short": "Clear all"
+            },
+            "work-title": {
+                "long": "Work title",
+                "short": "Title"
+            },
+            "theme": {
+                "long": "Theme",
+                "short": "Theme"
+            },
+            "dark-theme": {
+                "long": "Dark",
+                "short": "Dark"
+            },
+            "light-theme": {
+                "long": "Light",
+                "short": "Light"
+            },
+            "language": {
+                "long": "Language",
+                "short": "Language"
+            },
+            "portuguese": {
+                "long": "Português (BR)",
+                "short": "Português (BR)"
+            },
+            "english": {
+                "long": "English",
+                "short": "English"
+            }
+        },
+        "headers": {
+            "work-list": {
+                "long": "B.S. Theses List",
+                "short": "B.S. Theses List"
+            },
+            "filter": {
+                "long": "Filter works",
+                "short": "Filter"
+            },
+            "main-information": {
+                "long": "Main Information",
+                "short": "Main Information"
+            },
+            "paths": {
+                "long": "Paths",
+                "short": "Paths"
+            },
+            "work-type": {
+                "long": "Work Type",
+                "short": "Work Type"
+            },
+            "settings": {
+                "long": "Settings",
+                "short": "Settings"
+            },
+            "app-header": {
+                "long": "Institutional Repository for Bachelor's Theses",
+                "short": "B.S. Theses Repository"
+            },
+            "works-on-list": {
+                "long": "Showing x theses",
+                "short": "Showing x theses"
+            },
+            "developed-by": {
+                "long": "Designed and Developed by",
+                "short": "Developed by"
+            }
+        },
+        "order": {
+            "sort": {
+                "long": "Sort by",
+                "short": "Sort by"
+            },
+            "by-semester-asc": {
+                "long": "Semester [0-9]",
+                "short": "Semester[0-9]"
+            },
+            "by-semester-desc": {
+                "long": "Semester [9-0]",
+                "short": "Semester[9-0]"
+            },
+            "alphabetical-asc": {
+                "long": "Title [A-Z]",
+                "short": "Title[A-Z]"
+            },
+            "alphabetical-desc": {
+                "long": "Title [Z-A]",
+                "short": "Title[Z-A]"
+            }
+        },
+        "hints": {
+            "work-title": {
+                "long": "e.g. Design and Development of an Institutional Repository for Undergraduate Works in Systems and Digital Media",
+                "short": "e.g. Design"
+            },
+            "author": {
+                "long": "e.g. Adrian Rausley Ferreira Pinto Junior",
+                "short": "e.g. Adrian"
+            },
+            "supervisor": {
+                "long": "e.g. Antônio José Melo Leite Júnior",
+                "short": "e.g. Melo"
+            }
+        }
+    }
+}

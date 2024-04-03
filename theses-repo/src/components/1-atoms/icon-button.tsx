@@ -14,7 +14,8 @@ const iconButtonVariants = cva(
         variants: {
             variant: {
                 primary: "icon-button-primary",
-                error: "icon-button-error"
+                error: "icon-button-error",
+                primaryActivated: "icon-button-primary-activated"
             }
         },
         defaultVariants: {
@@ -31,7 +32,7 @@ export interface IconButtonProps
 }
 
 const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
-    ({ className, variant, icon, asChild = false }, ref) => {
+    ({ className, variant, icon, asChild = false, ...props }, ref) => {
         const Comp = asChild ? Slot : "button";
         const [isHovered, setIsHovered] = useState(false);
         return (
@@ -40,6 +41,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
                     iconButtonVariants({ variant, className })
                 )}
                 ref={ref}
+                {...props}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onFocus={() => setIsHovered(true)}
@@ -48,6 +50,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
                 {icon && (
                     <span className={cn(isHovered ? 'material-icons' : 'material-icons-outlined')}>{icon}</span>
                 )}
+                {props.children}
             </Comp>
         )
     }

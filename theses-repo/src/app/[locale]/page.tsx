@@ -34,6 +34,8 @@ import { useMemo, useState } from "react"
 
 import 'material-icons/iconfont/filled.css';
 import { ThesisCard } from "@/components/2-molecules/thesis-card"
+import FilterChipList from "@/components/2-molecules/filter-chip-list"
+import { TranslatedText } from "@/lib/translated-text"
 
 
 const formSchema = z.object({
@@ -41,6 +43,8 @@ const formSchema = z.object({
 })
 
 export default function Home() {
+  const strings = TranslatedText();
+
   const [filterChipState, setFilterChipState] = useState(false);
   const [popoverButtonState, setPopoverButtonState] = useState(false);
 
@@ -51,7 +55,7 @@ export default function Home() {
 
   const popoverButtonStateChange = () => {
     setPopoverButtonState(!popoverButtonState);
-    console.log("Popover Button State: " + popoverButtonState);
+    console.log("Popover Button State: " + TranslatedText().design);
   }
 
   const filterChipKey = useMemo(() => String(filterChipState), [filterChipState]);
@@ -67,9 +71,40 @@ export default function Home() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values)
   }
+
+  const filterItems = [
+    { label: 'Option 1', icon: 'search', activated: false },
+    { label: 'Option 2', activated: false },
+    { label: 'Option 3', activated: false },
+    { label: 'Option 4', icon: 'search', activated: false },
+    { label: 'Option 5', icon: 'search', activated: false },
+    { label: 'Option 6', icon: 'search', activated: false },
+    { label: 'Option 7', icon: 'search', activated: false },
+  ];
+
+  const thesisExample = {
+    title: {
+      pt: "DESENVOLVIMENTO DE JOGOS EDUCATIVOS CONTROLADOS VIA INTERFACE CÉREBRO-COMPUTADOR: UMA REVISÃO SISTEMÁTICA DA LITERATURA",
+      en: "DEVELOPMENT OF EDUCATIONAL GAMES CONTROLLED BY BRAIN-COMPUTER INTERFACE: A SYSTEMATIC LITERATURE REVIEW"
+    },
+    author: "Thais Ribeiro Barroso Torres",
+    supervisor: "Edgar Marçal de Barros Filho",
+    path: 5,
+    type: 2,
+    semester: "2023.2",
+    summary: {
+      pt: "Simplificar o desenvolvimento de jogos educativos controlados por ondas cerebrais, reunindo dados relevantes para desenvolvedores e pesquisadores da área.",
+      en: "To simplify the development of educational games controlled by brain waves, gathering relevant data for developers and researchers in the area."
+    },
+    keywords: {
+      pt: "1. Interfaces Cérebro-computador, 2. Dispositivos de Eletroencefalograma, 3. Jogos Educativos",
+      en: "1. Brain-Computer Interfaces, 2. Electroencephalography Devices, 3. Educational Games"
+    }
+  }
+
   return (
     <main className="dark:bg-dark-surface bg-surface flex flex-col items-center gap-4 p-4">
-      <Button icon="design_services" iconPosition="left">Button</Button>
+      <Button icon="design_services" iconPosition="left">{strings.design}</Button>
       <FilterChip icon="design_services" iconPosition="left" activated={filterChipState} onClick={filterChipStateChange} key={filterChipKey}>Design Services</FilterChip>
       <FilterChip>Design Services</FilterChip>
       <Button icon="delete_forever" iconPosition="left" variant="textPrimary">Button Text</Button>
@@ -107,7 +142,7 @@ export default function Home() {
       </Form>
       <Popover onOpenChange={popoverButtonStateChange}>
         <PopoverTrigger asChild>
-          <Button icon="settings" iconPosition="left" variant={popoverButtonState ? 'textPrimaryActivated' : 'textPrimary'} key={popoverButtonKey}>Open/Close</Button>
+          <IconButton icon="settings" variant={popoverButtonState ? 'primaryActivated' : 'primary'} key={popoverButtonKey}></IconButton>
         </PopoverTrigger>
         <PopoverContent className="w-80">
           <div className="grid gap-4">
@@ -154,7 +189,9 @@ export default function Home() {
           </div>
         </PopoverContent>
       </Popover>
-      <ThesisCard/>
+      <div>
+        <FilterChipList items={filterItems} />
+      </div>
     </main>
   );
 }

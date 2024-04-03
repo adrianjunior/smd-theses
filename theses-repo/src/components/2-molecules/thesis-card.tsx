@@ -12,7 +12,7 @@ import 'material-icons/iconfont/filled.css';
 import 'material-icons/iconfont/outlined.css';
 import { cn } from "@/lib/utils";
 
-export function ThesisCard() {
+export function ThesisCard({thesis, labels} : {thesis:any, labels:any}) {
     const [isExpanded, setIsExpanded] = useState(false);
     const [expandedHeight, setExpandedHeight] = useState(0);
     const expandableRef = useRef<HTMLDivElement>(null);
@@ -29,25 +29,25 @@ export function ThesisCard() {
         <Card className="w-96 thesis-card-style" data-expanded={isExpanded}>
             <CardContent>
                 <a href="https://drive.google.com/file/d/102rlXD9B--Qe58gKC1PgYTOiCMonlcXw/view?usp=sharing" target="_blank" className="thesis-card-link">
-                    DESENVOLVIMENTO DE JOGOS EDUCATIVOS CONTROLADOS VIA INTERFACE CÉREBRO-COMPUTADOR: UMA REVISÃO SISTEMÁTICA DA LITERATURA
+                    {thesis.title}
                 </a>
                 <div className="thesis-card-column">
                     <div className="thesis-card-responsive">
-                        <p className="text-on-surface-variant">Autor(a)</p>
-                        <p>Thais Ribeiro Barroso Torres</p>
+                        <p className="text-on-surface-variant">{labels.author}</p>
+                        <p>{thesis.author}</p>
                     </div>
                     <div className="thesis-card-responsive">
-                        <p className="text-on-surface-variant">Orientador(a)</p>
-                        <p>Edgar Marçal de Barros Filho</p>
+                        <p className="text-on-surface-variant">{labels.supervisor}</p>
+                        <p>{thesis.supervisor}</p>
                     </div>
                 </div>
                 <div className="thesis-card-line gap-x-2 gap-y-1">
                     <span className={cn(isExpanded ? 'material-icons' : 'material-icons-outlined')}>school</span>
-                    <p>Tecnologia Educativa</p>
+                    <p>{thesis.path}</p>
                     <p>•</p>
-                    <p>Monografia</p>
+                    <p>{thesis.type}</p>
                     <p>•</p>
-                    <p>2023.2</p>
+                    <p>{thesis.semester}</p>
                 </div>
                 <div
                     ref={expandableRef}
@@ -56,12 +56,12 @@ export function ThesisCard() {
                     style={{ maxHeight: expandedHeight }}
                 >
                     <div className="thesis-card-column gap-1">
-                        <p className="text-on-surface-variant">Objetivo</p>
-                        <p>Simplificar o desenvolvimento de jogos educativos controlados por ondas cerebrais, reunindo dados relevantes para desenvolvedores e pesquisadores da área.</p>
+                        <p className="text-on-surface-variant">{labels.objective}</p>
+                        <p>{thesis.objective}</p>
                     </div>
                     <div className="thesis-card-column gap-1">
-                        <p className="text-on-surface-variant">Palavras-chave</p>
-                        <p>1. Interfaces Cérebro-computador. 2. Dispositivos de Eletroencefalograma. 3. Jogos Educativos.</p>
+                        <p className="text-on-surface-variant">{labels.keywords}</p>
+                        <p>{thesis.keywords}</p>
                     </div>
                 </div>
             </CardContent>
@@ -69,8 +69,8 @@ export function ThesisCard() {
             <CardFooter onClick={() => setIsExpanded(!isExpanded)}>
                 <span className='material-icons thesis-card-dropdown' data-expanded={isExpanded}>arrow_drop_down</span>
                 <p>
-                    { !isExpanded && <span>Ver mais</span> }
-                    { isExpanded && <span>Ver menos</span> }
+                    {!isExpanded && <span>{labels.moreinfo}</span>}
+                    {isExpanded && <span>{labels.lessinfo}</span>}
                 </p>
             </CardFooter>
         </Card>
