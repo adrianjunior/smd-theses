@@ -11,6 +11,7 @@ export const TranslatedTheses = () => {
         semester: string;
         summary: string;
         keywords: string;
+        link: string;
     }
 
     const thesesData = useTranslations('Theses');
@@ -26,6 +27,7 @@ export const TranslatedTheses = () => {
             semester: thesesData(`thesis-${i}.semester`),
             summary: thesesData(`thesis-${i}.summary`),
             keywords: thesesData(`thesis-${i}.keywords`),
+            link: thesesData(`thesis-${i}.link`)
         }
         theses.push(thesis)
     }

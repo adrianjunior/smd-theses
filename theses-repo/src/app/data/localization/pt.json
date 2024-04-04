@@ -190,7 +190,8 @@
             "type": "monograph",
             "semester": "2023.2",
             "summary": "Simplificar o desenvolvimento de jogos educativos controlados por ondas cerebrais, reunindo dados relevantes para desenvolvedores e pesquisadores da área.",
-            "keywords": "1. Interfaces Cérebro-computador. 2. Dispositivos de Eletroencefalograma. 3. Jogos Educativos"
+            "keywords": "1. Interfaces Cérebro-computador. 2. Dispositivos de Eletroencefalograma. 3. Jogos Educativos",
+            "link": "https://drive.google.com/file/d/102rlXD9B--Qe58gKC1PgYTOiCMonlcXw/view?usp=sharing"
         },
         "thesis-2": {
             "title": "LEAN UX NO REDESIGN DA INTERFACE DO JOGO HEXACHRONOS",
@@ -200,7 +201,8 @@
             "type": "report",
             "semester": "2022.1",
             "summary": "Redesenhar a interface do jogo Hexachronos de forma iterativa, adaptando-a ao público e às propostas do jogo, utilizando as metodologias Design Thinking e Lean UX.",
-            "keywords": "1. Design de interface para jogos. 2. Lean UX. 3. Jogos mobile"
+            "keywords": "1. Design de interface para jogos. 2. Lean UX. 3. Jogos mobile",
+            "link": "https://drive.google.com/file/d/1M4t9jv1kg5BKVdlDBgX68DDHl-EHs2iE/view?usp=sharing"
         },
         "thesis-3": {
             "title": "LUMI: REPOSITÓRIO INSTITUCIONAL PARA A PRODUÇÃO AUDIOVISUAL DO CURSO DE SISTEMAS E MÍDIAS DIGITAIS",
@@ -210,7 +212,8 @@
             "type": "report",
             "semester": "2021.1",
             "summary": "Lumi é um repositório digital para centralizar e dar visibilidade aos trabalhos audiovisuais do curso de Sistemas e Mídias Digitais da UFC, servindo como portfólio profissional para os alunos.",
-            "keywords": "1. Repositório institucional digital. 2. Portfólio audiovisual. 3. Front-end. 4. Sistema Web."
+            "keywords": "1. Repositório institucional digital. 2. Portfólio audiovisual. 3. Front-end. 4. Sistema Web.",
+            "link": "https://drive.google.com/file/d/1CMiH1dvaFZu0blycek5YxLSGyYn9wl-Q/view?usp=sharing"
         }
     }
 }

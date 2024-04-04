@@ -190,7 +190,8 @@
             "type": "monograph",
             "semester": "2023.2",
             "summary": "To simplify the development of educational games controlled by brain waves, gathering relevant data for developers and researchers in the area.",
-            "keywords": "1. Brain-Computer Interfaces. 2. Electroencephalography Devices. 3. Educational Games"
+            "keywords": "1. Brain-Computer Interfaces. 2. Electroencephalography Devices. 3. Educational Games",
+            "link": "https://drive.google.com/file/d/102rlXD9B--Qe58gKC1PgYTOiCMonlcXw/view?usp=sharing"
         },
         "thesis-2": {
             "title": "LEAN UX IN THE REDESIGN OF THE HEXACHRONOS GAME INTERFACE",
@@ -200,7 +201,8 @@
             "type": "report",
             "semester": "2022.1",
             "summary": "To redesign the interface of the Hexachronos game in an iterative way, adapting it to the audience and the game's proposals, using the Design Thinking and Lean UX methodologies.",
-            "keywords": "1. Game interface design. 2. Lean UX. 3. Mobile games"
+            "keywords": "1. Game interface design. 2. Lean UX. 3. Mobile games",
+            "link": "https://drive.google.com/file/d/1M4t9jv1kg5BKVdlDBgX68DDHl-EHs2iE/view?usp=sharing"
         },
         "thesis-3": {
             "title": "LUMI: INSTITUTIONAL REPOSITORY FOR THE AUDIOVISUAL PRODUCTION OF THE SYSTEMS AND DIGITAL MEDIA COURSE",
@@ -210,7 +212,8 @@
             "type": "report",
             "semester": "2021.1",
             "summary": "Lumi is a digital repository to centralize and give visibility to the audiovisual works of the Systems and Digital Media course at UFC, serving as a professional portfolio for students.",
-            "keywords": "1. Digital institutional repository. 2. Audiovisual portfolio. 3. Front-end. 4. Web system."
+            "keywords": "1. Digital institutional repository. 2. Audiovisual portfolio. 3. Front-end. 4. Web system.",
+            "link": "https://drive.google.com/file/d/1CMiH1dvaFZu0blycek5YxLSGyYn9wl-Q/view?usp=sharing"
         }
     }
 }

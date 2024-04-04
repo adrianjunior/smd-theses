@@ -1,6 +1,5 @@
 .card-layout {
     @apply
-    rounded-large 
     flex
     flex-col
     items-stretch
@@ -14,6 +13,8 @@
     items-start
     sm:p-4
     lg:p-6  
+    sm:gap-3
+    lg:gap-4
     text-label-large
     font-medium
 }

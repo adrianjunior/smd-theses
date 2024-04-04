@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         </PopoverContent>
       </Popover>
-      <ThesisCard thesis={theses[0]} strings={strings}/>
+      <ThesisCard thesis={theses[1]} strings={strings}/>
       <div>
         <FilterChipList items={filterItems} />
       </div>
